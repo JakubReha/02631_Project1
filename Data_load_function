@@ -2,6 +2,7 @@ import numpy as np
 def dataLoad(filename):
     bacteria=np.array([1,2,3,4])
     f = open(filename)
+    # zero matrix to which we will append particular lines of data
     data=np.zeros((2,3))
     i=0
     for line in f.readlines():
@@ -20,6 +21,7 @@ def dataLoad(filename):
     if data.shape[0]==2:
         print(("Error: No input fullfils given parameters ",i))
     else:
+        # deleting the zero matrix from the beginning
         data = data[2:data.shape[0],:]
     f.close()
     return data
