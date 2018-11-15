@@ -27,7 +27,7 @@ def dataFilter():
     filters = [0, -1, -1]  # array to hold filers, 0 - name filter, 1 - lower bound, 2 - upper bound
 
     while selection == -1:
-        selection = isValid(input("Enter the type of Bacteria you would like to filter:"))
+        selection = isValid(input("Enter the type of Bacteria you would like to filter (enter 'None' if you don't wish to filter):"))
         if selection == -1: print("Invalid Input, Please Try Again")
 
     filters[0] = selection

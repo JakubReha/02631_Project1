@@ -3,6 +3,7 @@ from dataLoadFunction import dataLoad
 from displayMenu import displayMenu
 from dataStatistics import dataStatistics
 from plottingFunction import dataPlot
+from plotFunction2 import dataPlot2
 from filter import dataFilter, filterArray
 
 menuItems = np.array(["Load Data", "Filter data", "Display statistics", "Generate plots", "Quit"])
@@ -35,6 +36,7 @@ while isRunning:
     elif choice == 4:
         if isDataLoaded:
             print(dataPlot(filtered))
+            print(dataPlot2(filtered))
         else:
             print("You Must Load Data Prior To Calculations")
     # ------------------------------------------------------------------
