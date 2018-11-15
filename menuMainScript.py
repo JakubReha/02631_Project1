@@ -5,7 +5,7 @@ from dataStatistics import dataStatistics
 from plottingFunction import dataPlot
 from filter import dataFilter, filterArray
 
-menuItems = np.array([ "Load Data","Filter data","Display statistics","Generate plots","Quit"])
+menuItems = np.array(["Load Data", "Filter data", "Display statistics", "Generate plots", "Quit"])
 filter = np.array([0, -1, -1])
 isDataLoaded = False
 isRunning = True
