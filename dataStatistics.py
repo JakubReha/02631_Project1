@@ -51,8 +51,8 @@ def dataStatistics(data, statistic):  # data is a 2d array, statistic is a strin
         if sum > 0: return sum/count
         return 0
 
-    else: result = -1
-    return result  # returns -1 in event where string invalid
+    else: result = "Error: Invalid Argument"
+    return result  # returns error in event where string invalid
 
 
 arguments = ["Mean Temperature", "Mean Growth rate", "Std Temperature",
